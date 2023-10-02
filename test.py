@@ -19,7 +19,7 @@ async def send_notification(message):
     await bot.send_message(chat_id=chat_id, text=message)
 
 # Load a list of passwords from a file
-with open("rockyou.txt", "r", encoding="utf-8") as password_file:
+with open("passes.txt", "r", encoding="utf-8") as password_file:
     passwords = password_file.readlines()
 
 # Iterate through the list of passwords
